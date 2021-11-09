@@ -269,3 +269,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.mprf-phone-change-link {
+  font-size: 14px !important;
+  margin-top: 5px !important;
+  color: #0DB14B !important;
+}
