@@ -173,7 +173,8 @@
     <link href="./files/hot_keys.css" type="text/css" data-template-style="true" rel="stylesheet">
     <link href="./files/pubstyles.css" type="text/css" data-template-style="true" rel="stylesheet">
 
-
+    <!-- 08/11/21 -->
+    <link href="./css/custom.css" type="text/css" rel="stylesheet">
 
 
 
@@ -3321,138 +3322,249 @@
                 <h1>Профиль пользователя</h1>
             </div>
 
-
-            <div class="bx_profile">
-                <form class="lk_form account-form" method="post" name="form1"
-                    action="http://tau.h2.victory.su/personal/private/" enctype="multipart/form-data" role="form">
-                    <input type="hidden" name="sessid" id="sessid" value="e75d9e64f5867332fe4fd1118bb4a924"> <input
-                        type="hidden" name="lang" value="s1">
-                    <input type="hidden" name="ID" value="1">
-                    <input type="hidden" name="LOGIN" value="79111111111">
-                    <div class="account-form__wrapper main-profile-block-shown" id="user_div_reg">
-                        <div class="main-profile-block-date-info">
-                            <div class="small">
-                                <strong>Дата обновления:</strong>
-                                <strong>22.07.2021 15:23:51</strong>
-                            </div>
-                            <div class="small">
-                                <strong>Последняя авторизация:</strong>
-                                <strong>08.11.2021 10:27:24</strong>
-                            </div>
-                        </div>
-
-                        <div class="form__widget form__widget_fio">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-last-name">Фамилия:</label>
-                                    <input class="text-field" type="text" name="LAST_NAME" maxlength="50"
-                                        id="main-profile-last-name" value="Проханов">
+            <div class="main-profile-block-date-info">
+                <div class="small">
+                    <strong>Дата обновления:</strong>
+                    <strong>22.07.2021 15:23:51</strong>
+                </div>
+                <div class="small">
+                    <strong>Последняя авторизация:</strong>
+                    <strong>08.11.2021 10:27:24</strong>
+                </div>
+            </div>
+            <div class="mprf__container account-form">
+                <div class="mprf__left">
+                    <div class="bx_profile">
+                        <form class="lk_form" method="post" name="form1"
+                            action="http://tau.h2.victory.su/personal/private/" enctype="multipart/form-data" role="form">
+                            <input type="hidden" name="sessid" id="sessid" value="e75d9e64f5867332fe4fd1118bb4a924"> <input
+                                type="hidden" name="lang" value="s1">
+                            <input type="hidden" name="ID" value="1">
+                            <input type="hidden" name="LOGIN" value="79111111111">
+                            <div class="account-form__wrapper main-profile-block-shown" id="user_div_reg">
+        
+                                <div class="form__widget form__widget_fio">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-last-name">Фамилия:</label>
+                                            <input class="text-field" type="text" name="LAST_NAME" maxlength="50"
+                                                id="main-profile-last-name" value="Проханов">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form__widget form__widget_fio">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-name">Имя:</label>
-                                    <input class="text-field" type="text" name="NAME" maxlength="50"
-                                        id="main-profile-name" value="Сергей">
+                                <div class="form__widget form__widget_fio">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-name">Имя:</label>
+                                            <input class="text-field" type="text" name="NAME" maxlength="50"
+                                                id="main-profile-name" value="Сергей">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form__widget form__widget_fio">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-second-name">Отчество:</label>
-                                    <input class="text-field" type="text" name="SECOND_NAME" maxlength="50"
-                                        id="main-profile-second-name" value="">
+                                <div class="form__widget form__widget_fio">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-second-name">Отчество:</label>
+                                            <input class="text-field" type="text" name="SECOND_NAME" maxlength="50"
+                                                id="main-profile-second-name" value="">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="form__widget form__widget_birthday">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="PERSONAL_BIRTHDAY">Дата рождения:</label>
-                                    <div class="form__widget-input">
-                                        <input type="text" id="PERSONAL_BIRTHDAY" name="PERSONAL_BIRTHDAY" value=""><img
-                                            src="./files/calendar-icon.gif" alt="Выбрать дату в календаре"
-                                            class="calendar-icon"
-                                            onclick="BX.calendar({node:this, field:&#39;PERSONAL_BIRTHDAY&#39;, form: &#39;form1&#39;, bTime: false, currentTime: &#39;1636367423&#39;, bHideTime: false});"
-                                            onmouseover="BX.addClass(this, &#39;calendar-icon-hover&#39;);"
-                                            onmouseout="BX.removeClass(this, &#39;calendar-icon-hover&#39;);"
-                                            border="0">
+        
+                                <div class="form__widget form__widget_birthday">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="PERSONAL_BIRTHDAY">Дата рождения:</label>
+                                            <div class="form__widget-input">
+                                                <input type="text" id="PERSONAL_BIRTHDAY" name="PERSONAL_BIRTHDAY" value=""><img
+                                                    src="./img/mprf-date.svg" alt="Выбрать дату в календаре"
+                                                    class="calendar-icon"
+                                                    onclick="BX.calendar({node:this, field:&#39;PERSONAL_BIRTHDAY&#39;, form: &#39;form1&#39;, bTime: false, currentTime: &#39;1636367423&#39;, bHideTime: false});"
+                                                    onmouseover="BX.addClass(this, &#39;calendar-icon-hover&#39;);"
+                                                    onmouseout="BX.removeClass(this, &#39;calendar-icon-hover&#39;);"
+                                                    border="0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__widget form__widget_gender">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <div class="form__widget-label">Пол:</div>
+                                            <ul class="tabs_gender">
+                                                <li class="tabs__item">
+                                                    <input id="male" type="radio" name="PERSONAL_GENDER" value="M">
+                                                    <label for="male" class="tabs__item-btn male"><span>Мужской</span></label>
+                                                </li>
+                                                <li class="tabs__item">
+                                                    <input id="female" type="radio" name="PERSONAL_GENDER" value="F">
+                                                    <label for="female"
+                                                        class="tabs__item-btn female"><span>Женский</span></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__widget form__widget_email">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-email">E-Mail:</label>
+                                            <input class="text-field" type="text" name="EMAIL" maxlength="50"
+                                                id="main-profile-email" value="oepink80@gmail.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__widget form__widget_password">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-password">Новый пароль:</label>
+                                            <input class="text-field" type="password" name="NEW_PASSWORD" maxlength="50"
+                                                id="main-profile-password" value="" autocomplete="off">
+                                            <p class="main-profile-form-password-annotation small">
+                                                пароль должен быть не менее 6 символов длиной, содержать латинские символы
+                                                верхнего регистра (A-Z), содержать латинские символы нижнего регистра (a-z),
+                                                содержать цифры (0-9), содержать знаки пунктуации
+                                                (,.&lt;&gt;/?;:'"[]{}\|`~!@#$%^&amp;*()_+=-). </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__widget form__widget_password">
+                                    <div class="">
+                                        <div class="account-form__widget form__widget-box">
+                                            <label class="form__widget-label" for="main-profile-password-confirm">Подтверждение
+                                                нового пароля:</label>
+                                            <input class="text-field" type="password" name="NEW_PASSWORD_CONFIRM" maxlength="50"
+                                                value="" id="main-profile-password-confirm" autocomplete="off">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form__widget form__widget_gender">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <div class="form__widget-label">Пол:</div>
-                                    <ul class="tabs_gender">
-                                        <li class="tabs__item">
-                                            <input id="female" type="radio" name="PERSONAL_GENDER" value="F">
-                                            <label for="female"
-                                                class="tabs__item-btn female"><span>Женский</span></label>
-                                        </li>
-                                        <li class="tabs__item">
-                                            <input id="male" type="radio" name="PERSONAL_GENDER" value="M">
-                                            <label for="male" class="tabs__item-btn male"><span>Мужской</span></label>
-                                        </li>
-                                    </ul>
+                            <div class="form__controls password-form__controls">
+                                <input type="submit" name="save" class="btn-form__control btn-primary main-profile-submit"
+                                    value="Сохранить">
+                                <div class="btn-green-border btn-form__control">
+                                    <input type="submit" class="cancel" name="reset" value="Отмена">
+                                </div>
+                                <div class="btn-logout">
+                                    <a href="http://tau.h2.victory.su/personal/private/?logout=yes"
+                                        class="btn btn-cancel btn-green-border">Выйти</a>
                                 </div>
                             </div>
+                        </form>
+                        <div class="col-sm-12 main-profile-social-block">
                         </div>
-                        <div class="form__widget form__widget_email">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-email">E-Mail:</label>
-                                    <input class="text-field" type="text" name="EMAIL" maxlength="50"
-                                        id="main-profile-email" value="oepink80@gmail.com">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__widget form__widget_password">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-password">Новый пароль:</label>
-                                    <input class="text-field" type="password" name="NEW_PASSWORD" maxlength="50"
-                                        id="main-profile-password" value="" autocomplete="off">
-                                    <p class="main-profile-form-password-annotation small">
-                                        пароль должен быть не менее 6 символов длиной, содержать латинские символы
-                                        верхнего регистра (A-Z), содержать латинские символы нижнего регистра (a-z),
-                                        содержать цифры (0-9), содержать знаки пунктуации
-                                        (,.&lt;&gt;/?;:'"[]{}\|`~!@#$%^&amp;*()_+=-). </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form__widget form__widget_password">
-                            <div class="">
-                                <div class="account-form__widget form__widget-box">
-                                    <label class="form__widget-label" for="main-profile-password-confirm">Подтверждение
-                                        нового пароля:</label>
-                                    <input class="text-field" type="password" name="NEW_PASSWORD_CONFIRM" maxlength="50"
-                                        value="" id="main-profile-password-confirm" autocomplete="off">
-                                </div>
-                            </div>
-                        </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="form__controls password-form__controls">
-                        <input type="submit" name="save" class="btn-form__control btn-primary main-profile-submit"
-                            value="Сохранить">
-                        <div class="btn-green-border btn-form__control">
-                            <input type="submit" class="cancel" name="reset" value="Отмена">
-                        </div>
-                        <div class="btn-logout">
-                            <a href="http://tau.h2.victory.su/personal/private/?logout=yes"
-                                class="btn btn-cancel btn-green-border">Выйти</a>
-                        </div>
-                    </div>
-                </form>
-                <div class="col-sm-12 main-profile-social-block">
                 </div>
-                <div class="clearfix"></div>
+                <div class="mprf__right">
+
+                    <div class="mprf__address">
+                        <div class="form__widget form__widget_fio">
+                            <label class="form__widget-label" for="main-profile-last-name">Адреса доставки:</label>
+
+                            <div class="mprf__address-fields">
+                                <div class="mprf__address-item">
+                                    <div class="account-form__widget form__widget-box">
+                                        <div class="mprf__field">
+                                            <input class="text-field" type="text" name="address1" value="ул. Пушкина, д.8, кв. 320">
+                                            <div class="mprf__address-edit-btn"><img src="img/m-edit.svg" alt=""></div>
+                                            <div class="mprf__address-remove-btn"><img src="img/m-remove.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="mprf__edit-container">
+                                        <div class="account-form__widget form__widget-box mprf__address-item">
+                                            <div class="mprf__field">
+                                                <input class="text-field" type="text" name="address_edit1" value="ул. Пушкина">
+                                            </div>
+                                        </div>
+                                        <div class="mprf__row">
+                                            <div class="account-form__widget form__widget-box mprf__row-item">
+                                                <div class="mprf__field">
+                                                    <input class="text-field" type="text" name="address_edit2" value="30">
+                                                </div>
+                                            </div>
+                                            <div class="account-form__widget form__widget-box mprf__row-item">
+                                                <div class="mprf__field">
+                                                    <input class="text-field" type="text" name="address_edit3" value="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="mprf__button">
+                                            Сохранить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mprf__address-item">
+                                    <div class="account-form__widget form__widget-box">
+                                        <div class="mprf__field">
+                                            <input class="text-field" type="text" name="address2" value="ул. Майская, д.8, кв. 320">
+                                            <div class="mprf__address-edit-btn"><img src="img/m-edit.svg" alt=""></div>
+                                            <div class="mprf__address-remove-btn"><img src="img/m-remove.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="mprf__edit-container">
+                                        <div class="account-form__widget form__widget-box mprf__address-item">
+                                            <div class="mprf__field">
+                                                <input class="text-field" type="text" name="address_edit1" value="ул. Пушкина">
+                                            </div>
+                                        </div>
+                                        <div class="mprf__row">
+                                            <div class="account-form__widget form__widget-box mprf__row-item">
+                                                <div class="mprf__field">
+                                                    <input class="text-field" type="text" name="address_edit2" value="30">
+                                                </div>
+                                            </div>
+                                            <div class="account-form__widget form__widget-box mprf__row-item">
+                                                <div class="mprf__field">
+                                                    <input class="text-field" type="text" name="address_edit3" value="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="mprf__button">
+                                            Сохранить
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mprf__add">
+                                <div class="mprf__add-title">
+                                    <img src="img/mprf-add.svg" alt=""> Добавить еще один адрес
+                                </div>
+                                <div class="mprf__add-content">
+                                    <div class="account-form__widget form__widget-box mprf__address-item">
+                                        <div class="mprf__field">
+                                            <input class="text-field" type="text" name="address_edit1" placeholder="Улица">
+                                        </div>
+                                    </div>
+                                    <div class="mprf__row">
+                                        <div class="account-form__widget form__widget-box mprf__row-item">
+                                            <div class="mprf__field">
+                                                <input class="text-field" type="text" name="address_edit2" placeholder="Номер дома">
+                                            </div>
+                                        </div>
+                                        <div class="account-form__widget form__widget-box mprf__row-item">
+                                            <div class="mprf__field">
+                                                <input class="text-field" type="text" name="address_edit3" placeholder="Квартира/офис">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="mprf__button">
+                                        Сохранить
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="mprf__add-address-btn js-add-address">
+                                <img src="img/m-add.svg" alt="">
+                                Добавить еще один адрес
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+            
             <br>
         </div>
     </div>
@@ -4771,6 +4883,10 @@
             <jdiv class="jivoMouseTrack_6dbb"></jdiv>
         </jdiv>
     </jdiv>
+
+    <script type="text/javascript" src="./js/custom.js"></script>
+    
+    
 </body>
 <div id="vimeo-record-extension"></div>
 

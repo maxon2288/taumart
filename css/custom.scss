@@ -1,0 +1,197 @@
+.mprf {
+    &__container {
+        display: flex;
+        margin-top: 40px;
+        .text-field {
+            height: 45px !important;
+            padding-left: 18px !important;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        margin-right: 130px;
+        max-width: 370px;
+        width: 100%;
+        @media screen and (max-width: 1023px) {
+            margin-right: 70px;
+        }
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+    &__right {
+        flex-grow: 1;
+        width: 100%;
+        max-width: 370px;  
+        padding-right: 40px; 
+        @media screen and (max-width: 767px) {
+            max-width: 100%;
+        }
+    }
+    &__address {
+        position: relative;
+    }
+    &__field {
+        position: relative;
+    }
+    &__address-edit-btn {
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        display: flex;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__address-remove-btn {
+        position: absolute;
+        top: 13px;
+        right: -35px;
+        display: flex;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    &__address-item {
+        margin-bottom: 12px;
+    }
+    &__add-address-btn {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0DB14B;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 13px;
+        color: #0DB14B;
+        margin-top: 27px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover {
+            background-color: #0db14c18;
+        }
+        img {
+            margin-right: 9px;
+        }
+    }
+    &__button {
+        background: #0DB14B;
+        border: 1px solid #0DB14B;
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 13px;
+        color: #FFFFFF;
+        margin-top: 37px;
+        transition: 0.2s;
+        margin-bottom: 30px;
+        &:hover {
+            background: #0d9e45;
+        }
+    }
+    &__edit-container {
+        margin-top: 30px;   
+        display: none;
+        flex-direction: column;
+        &.active {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+
+            width: calc(50% - 15px);
+        }
+    }
+    &__add {
+        display: none;
+        flex-direction: column;
+        &.active {
+            display: flex;
+        }
+        &-title {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 13px;
+            color: #000000;
+            margin-top: 30px;
+            img {
+                margin-right: 14px;
+                
+            }
+        }
+        .mprf__button {
+            margin-bottom: 0;
+        }
+    }
+}
+.account-form .form__widget-box .text-field, .form__widget_birthday input {
+    height: 45px !important;
+    padding-left: 18px !important;
+    width: 100%;
+}
+.form__widget-input {
+    max-width: 100% !important;
+}
+.form__widget_birthday .form__widget-box .calendar-icon {
+    bottom: 12px;
+}
+.account-form ul.tabs_gender li.tabs__item {
+    width: 100%;
+    border: none !important;
+    width: calc(50% - 15px);
+}
+.account-form ul.tabs_gender {
+    max-width: 100% !important;
+    display: flex;
+    width: 100% !important;
+}
+.account-form ul.tabs_gender li.tabs__item label.tabs__item-btn {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #0DB14B;
+    box-sizing: border-box;
+    border-radius: 3px;
+    span {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 13px;
+        color: #0DB14B;
+    }
+    
+}
+.account-form ul.tabs_gender li.tabs__item input[type="radio"]:checked + label {
+    span {
+        color: white !important;
+    }
+}
+.account-form ul.tabs_gender {
+    border: none !important;
+    display: flex;
+    justify-content: space-between;
+}
